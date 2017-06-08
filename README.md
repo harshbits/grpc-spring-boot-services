@@ -1,5 +1,6 @@
-# gRPC- Spring Boot - A Spring Boot implementation 
-==================================================
+gRPC- Spring Boot - A Spring Boot implementation 
+================================================
+
 
 <table>
   <tr>
