@@ -27,7 +27,7 @@ Reference Links:
 
 Usage:
 ------
-Clone [the JARs][], and add to your `pom.xml`:
+Clone [the repository][https://github.com/harshbits/grpc-spring-boot-services.git], and add to your `pom.xml`:
 
 ```xml
 <!-- Spring gRPC boot -->
