@@ -5,6 +5,7 @@
   <tr>
     <td><b>gRPC Homepage:</b></td>
     <td><a href="http://www.grpc.io/">www.grpc.io</a></td>
+    <td>[![Join the chat at https://gitter.im/grpc/grpc](https://badges.gitter.im/grpc/grpc.svg)](https://gitter.im/grpc/grpc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)</td>
   </tr>
   <tr>
     <td><b>Spring Boot Homepage:</b></td>
