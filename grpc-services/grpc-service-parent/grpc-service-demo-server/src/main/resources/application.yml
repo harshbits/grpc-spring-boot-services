@@ -1,0 +1,4 @@
+server:
+  port: 19081
+grpc:
+  port: 17565

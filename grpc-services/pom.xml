@@ -21,7 +21,7 @@
 		<groupId>com.grpc.service</groupId>
 		<artifactId>grpc-spring-boot-services</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<!-- <relativePath>../grpc-spring-boot-services</relativePath> -->
 	</parent>
 
 	<properties>
