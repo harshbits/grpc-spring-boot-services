@@ -55,4 +55,4 @@ grpc:
   port: <port>
 ```
 
-
+Note: specifying above property (i.e. port) is optional. Default port is '7565'
