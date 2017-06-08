@@ -18,3 +18,11 @@ gRPC- Spring Boot - A Spring Boot implementation
 
 Reference Links:
 ----------------
+
+### Protobuf
+```link
+
+* [Metadata - headers & trailers](https://github.com/google/grpc-java/blob/master/core/src/main/java/io/grpc/Metadata.java)
+https://developers.google.com/protocol-buffers/
+
+```
