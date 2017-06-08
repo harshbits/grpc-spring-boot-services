@@ -28,7 +28,7 @@
 
 	<dependencies>
 
-		<!-- Copart gRPC boot -->
+		<!-- Spring gRPC boot -->
 		<dependency>
 			<groupId>com.grpc.service</groupId>
 			<artifactId>grpc-services-boot-starter</artifactId>
