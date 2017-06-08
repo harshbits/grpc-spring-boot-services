@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>grpc-service-parent</artifactId>
+	<packaging>pom</packaging>
+	<name>grpc-service-parent</name>
+	<description>gRPC services parent project</description>
+
+	<parent>
+		<groupId>com.grpc.service</groupId>
+		<artifactId>grpc-service-dependencies</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../grpc-service-dependencies</relativePath>
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<grpc.service.version>0.0.1-SNAPSHOT</grpc.service.version>
+	</properties>
+
+	<modules>
+		<module>grpc-service-demo-server</module>
+	</modules>
+
+	<dependencies>
+
+		<!-- Copart gRPC boot -->
+		<dependency>
+			<groupId>com.grpc.service</groupId>
+			<artifactId>grpc-services-boot-starter</artifactId>
+			<version>${grpc.service.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>io.grpc</groupId>
+					<artifactId>grpc-netty</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>spring-releases</id>
+			<url>http://repo.spring.io/release</url>
+		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
