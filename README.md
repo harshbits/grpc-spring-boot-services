@@ -20,9 +20,8 @@ Reference Links:
 ----------------
 
 ### Protobuf
-```link
 
-* [Metadata - headers & trailers](https://github.com/google/grpc-java/blob/master/core/src/main/java/io/grpc/Metadata.java)
-https://developers.google.com/protocol-buffers/
+* [Google - protocol-buffers](https://developers.google.com/protocol-buffers/)
+* [Github - protocol-buffers](https://github.com/google/protobuf/)
 
-```
+
