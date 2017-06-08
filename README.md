@@ -50,8 +50,9 @@ Clone [the repository](https://github.com/harshbits/grpc-spring-boot-services.gi
 ```
 below property in `application.yml`
 
----
+``` yaml
 grpc:
-	port: <port>
----
+  port: <port>
+```
+
 
