@@ -27,24 +27,24 @@ Reference Links:
 
 Usage:
 ------
+Clone [the repository][], and add to your `pom.xml`:
+
 ```xml
-<dependencies>
-	<!-- Spring gRPC boot -->
-	<dependency>
-		<groupId>com.grpc.service</groupId>
-		<artifactId>grpc-services-boot-starter</artifactId>
-		<version>${grpc.service.version}</version>
-		<exclusions>
-			<exclusion>
-				<groupId>io.grpc</groupId>
-				<artifactId>grpc-netty</artifactId>
-			</exclusion>
-			<exclusion>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter</artifactId>
-			</exclusion>
-		</exclusions>
-	</dependency>	
-</dependencies>
+<!-- Spring gRPC boot -->
+<dependency>
+  <groupId>com.grpc.service</groupId>
+  <artifactId>grpc-services-boot-starter</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <exclusions>
+     <exclusion>
+        <groupId>io.grpc</groupId>
+	<artifactId>grpc-netty</artifactId>
+     </exclusion>
+     <exclusion>
+        <groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter</artifactId>
+     </exclusion>
+  </exclusions>
+</dependency>
 
 ```
