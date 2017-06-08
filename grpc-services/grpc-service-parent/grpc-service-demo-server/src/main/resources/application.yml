@@ -2,3 +2,22 @@ server:
   port: 19081
 grpc:
   port: 17565
+
+  
+  
+spring:
+  profiles: 
+  
+  redis:
+    host: localhost
+    port: 6379
+    password: 
+    database: 0
+
+logging:
+  level:
+    com.grpc.service: debug
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  

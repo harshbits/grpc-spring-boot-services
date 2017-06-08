@@ -12,5 +12,9 @@ public class ApplicationConfiguration {
 	public GreetingService greetingService(){
 		return new GreetingService();
 	}
-
+	
+	
+	//Create Bean for Person Service
+	
+	
 }
