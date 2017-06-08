@@ -29,26 +29,22 @@ Usage:
 ------
 ```xml
 <dependencies>
-		<!-- Spring gRPC boot -->
-		<dependency>
-			<groupId>com.grpc.service</groupId>
-			<artifactId>grpc-services-boot-starter</artifactId>
-			<version>${grpc.service.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>io.grpc</groupId>
-					<artifactId>grpc-netty</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-	</dependencies>
+	<!-- Spring gRPC boot -->
+	<dependency>
+		<groupId>com.grpc.service</groupId>
+		<artifactId>grpc-services-boot-starter</artifactId>
+		<version>${grpc.service.version}</version>
+		<exclusions>
+			<exclusion>
+				<groupId>io.grpc</groupId>
+				<artifactId>grpc-netty</artifactId>
+			</exclusion>
+			<exclusion>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter</artifactId>
+			</exclusion>
+		</exclusions>
+	</dependency>	
+</dependencies>
 
 ```
