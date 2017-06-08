@@ -29,6 +29,12 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 	</properties>
+	
+	<modules>
+		<module>grpc-service-parent</module>
+		<module>grpc-service-dependencies</module>
+	</modules>
+
 
 
 	<build>
