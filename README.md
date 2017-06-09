@@ -29,6 +29,9 @@ Reference Links:
 * [Google - protocol-buffers](https://developers.google.com/protocol-buffers/)
 * [Github - protocol-buffers](https://github.com/google/protobuf/)
 
+### HTTP2
+* [Github - HTTP2](https://http2.github.io/)
+* [gRPC over HTTP2](https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md)
 
 Usage:
 ------
