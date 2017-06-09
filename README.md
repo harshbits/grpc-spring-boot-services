@@ -56,3 +56,9 @@ grpc:
 ```
 
 Note: specifying above property (i.e. port) is optional. Default port is `7565`
+
+### Demo server project
+
+* [grpc-service-demo-server](https://github.com/harshbits/grpc-spring-boot-services/tree/master/grpc-services/grpc-service-parent/grpc-service-demo-server)
+
+
