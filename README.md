@@ -64,3 +64,9 @@ Note: specifying above property (i.e. port) is optional. Default port is `7565`
 ### How to Build
 Refer this github [grpc-java](https://github.com/grpc/grpc-java) page
 
+
+Reference Projects/Repositories:
+--------------------------------
+
+* https://github.com/LogNet/grpc-spring-boot-starter
+* https://github.com/ExampleDriven/spring-boot-grpc-example
