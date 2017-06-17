@@ -74,6 +74,22 @@ Note: specifying above property (i.e. port) is optional. Default port is `7565`
 Refer this github [grpc-java](https://github.com/grpc/grpc-java#download) page
 
 
+Prerequisites
+-------------
+In order to start work with project, make sure you have configured IDE/System with prerequisites steps.
+
+### Java Version
+* Java SE Development Kit 8 (JDK 8) 
+
+### Lombok
+* Install Lombok for your IDE (i.e. STS or Eclipse)
+* Version to install: `1.16.16`
+* Installation Guide: [Please refer this link](http://codeomitted.com/setup-lombok-with-stseclipse-based-ide/)
+
+### .proto file editor
+* Install protobuf file editor for IDE (i.e. STS or Eclipse
+* Eclipse Marketplace - [Please refer this link](https://marketplace.eclipse.org/content/protobuf-dt)
+
 Reference Projects/Repositories:
 --------------------------------
 
