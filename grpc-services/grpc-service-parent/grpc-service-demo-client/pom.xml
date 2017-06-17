@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>grpc-service-demo-client</artifactId>
+	<packaging>jar</packaging>
+	<name>grpc-service-demo-client</name>
+	<description>gRPC services project contains implementations</description>
+
+	<developers>
+		<developer>
+			<name>Harsh Bhavsar</name>
+		</developer>
+	</developers>
+
+	<parent>
+		<groupId>com.grpc.service</groupId>
+		<artifactId>grpc-service-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../grpc-service-parent</relativePath>
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<os.detected.classifier>osx-x86_64</os.detected.classifier>
+		<copart.grpc.version>0.0.1-SNAPSHOT</copart.grpc.version>
+		<io.grpc.version.old>1.0.1</io.grpc.version.old>
+		<io.grpc.version.new>1.3.0</io.grpc.version.new>
+		<!-- <protobuf.java.version>3.2.0</protobuf.java.version> -->
+		<protobuf.java.version>3.0.2</protobuf.java.version>
+		<kr.motd.maven.version>1.5.0.Final</kr.motd.maven.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.grpc</groupId>
+			<artifactId>grpc-stub</artifactId>
+			<!-- <version>${io.grpc.version}</version> -->
+			<!-- <version>[${io.grpc.version.old}, ${io.grpc.version.new}]</version> -->
+			<version>${io.grpc.version.old}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.grpc</groupId>
+			<artifactId>grpc-protobuf</artifactId>
+			<!-- <version>${io.grpc.version}</version> -->
+			<!-- <version>[${io.grpc.version.old}, ${io.grpc.version.new}]</version> -->
+			<version>${io.grpc.version.old}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.grpc</groupId>
+			<artifactId>grpc-netty</artifactId>
+			<!-- <version>${io.grpc.version}</version> -->
+			<!-- <version>[${io.grpc.version.old}, ${io.grpc.version.new}]</version> -->
+			<version>${io.grpc.version.old}</version>
+		</dependency>
+
+		<!-- <dependency> <groupId>io.grpc</groupId> <artifactId>grpc-all</artifactId> 
+			<version>${io.grpc.version}</version> <version>[${io.grpc.version.old}, ${io.grpc.version.new}]</version> 
+			</dependency> -->
+
+		<!-- Copart gRPC boot -->
+		<dependency>
+			<groupId>com.copart.grpc</groupId>
+			<artifactId>copart-grpc-starter</artifactId>
+			<version>${copart.grpc.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>io.grpc</groupId>
+					<artifactId>grpc-netty</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+		
+		<!-- Redis -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+		
+	</dependencies>
+
+	<build>
+		<extensions>
+			<extension>
+				<groupId>kr.motd.maven</groupId>
+				<artifactId>os-maven-plugin</artifactId>
+			</extension>
+		</extensions>
+		<plugins>
+
+			<plugin>
+				<groupId>kr.motd.maven</groupId>
+				<artifactId>os-maven-plugin</artifactId>
+				<version>${kr.motd.maven.version}</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.xolstice.maven.plugins</groupId>
+				<artifactId>protobuf-maven-plugin</artifactId>
+				<version>0.5.0</version>
+				<configuration>
+					<!-- The version of protoc must match protobuf-java. If you don't depend 
+						on protobuf-java directly, you will be transitively depending on the protobuf-java 
+						version that grpc depends on. -->
+					<protocArtifact>com.google.protobuf:protoc:${protobuf.java.version}:exe:${os.detected.classifier}</protocArtifact>
+					<pluginId>grpc-java</pluginId>
+					<pluginArtifact>io.grpc:protoc-gen-grpc-java:${io.grpc.version.old}:exe:${os.detected.classifier}</pluginArtifact>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>compile</goal>
+							<goal>compile-custom</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
