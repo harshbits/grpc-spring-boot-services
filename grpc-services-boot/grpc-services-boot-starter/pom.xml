@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>grpc-services-boot-starter</artifactId>
+	<artifactId>grpc-services-boot-autoconfigure</artifactId>
 	<packaging>jar</packaging>
-	<name>grpc-services-boot-starter</name>
-	<description>gRPC boot starter project for auto cofiguration</description>
+	<name>grpc-services-boot-autoconfigure</name>
+	<description>gRPC boot starter project for auto configuration</description>
 
 	<parent>
 		<groupId>com.grpc.service</groupId>
