@@ -42,7 +42,7 @@ Clone [the repository](https://github.com/harshbits/grpc-spring-boot-services.gi
 <!-- Spring gRPC boot -->
 <dependency>
   <groupId>com.grpc.service</groupId>
-  <artifactId>grpc-services-boot-starter</artifactId>
+  <artifactId>grpc-services-boot-autoconfigure</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <exclusions>
      <exclusion>
