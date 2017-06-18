@@ -13,6 +13,8 @@ gRPC- Spring Boot - A Spring Boot implementation
   </tr>
 </table>
 
+[![Build Status](https://travis-ci.org/harshbits/grpc-spring-boot-services.svg?branch=master)]
+
 [![Join the chat at https://gitter.im/grpc/grpc](https://badges.gitter.im/grpc/grpc.svg)](https://gitter.im/grpc/grpc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Version Details:
