@@ -24,7 +24,7 @@
 
 	<modules>
 		<module>grpc-services-boot-parent</module>
-		<module>grpc-services-boot-starter</module>
+		<module>grpc-services-boot-autoconfigure</module>
 	</modules>
 
 	<build>
