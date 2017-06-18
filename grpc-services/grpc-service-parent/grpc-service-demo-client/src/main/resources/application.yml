@@ -17,6 +17,9 @@ eureka:
     lease:
       duration: 5
 
+grpc:
+  targetServer: eureka://grpc-service-demo-server
+  
 logging:
   level:
     com.grpc.service: debug

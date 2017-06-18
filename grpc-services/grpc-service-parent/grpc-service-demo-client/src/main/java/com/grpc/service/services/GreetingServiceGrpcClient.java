@@ -3,6 +3,7 @@ package com.grpc.service.services;
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import com.grpc.service.eureka.EurekaNameResolverProvider;
@@ -24,6 +25,9 @@ public class GreetingServiceGrpcClient {
     private EurekaClientConfig eurekaClientConfig;
 	
 	private GreeterGrpc.GreeterBlockingStub greeterBlockingStub;
+	
+	@Value("${grpc.targetServer}")
+	private String targetServer;
 
 	public HelloReply sayHello() {
 
@@ -45,9 +49,9 @@ public class GreetingServiceGrpcClient {
 	
 	 @PostConstruct
 	    private void initializeClient() {
-
+		 
 	        ManagedChannel channel = ManagedChannelBuilder
-	            .forTarget("eureka://grpc-server")
+	            .forTarget(targetServer)
 	            .nameResolverFactory(new EurekaNameResolverProvider(eurekaClientConfig, "grpc.port"))
 	            .loadBalancerFactory(RoundRobinLoadBalancerFactory.getInstance())
 	            .usePlaintext(true)

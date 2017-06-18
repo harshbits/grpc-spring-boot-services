@@ -8,8 +8,6 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.BeanCreationException;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,8 +43,6 @@ public class GrpcServerRunner implements CommandLineRunner, DisposableBean {
 	public GrpcServerRunner(GrpcServerBuilderConfigurer configurer) {
 		this.configurer = configurer;
 	}
-
-	private static final Logger log = LoggerFactory.getLogger(GrpcServerRunner.class);
 
 	/**
 	 * Running Server
