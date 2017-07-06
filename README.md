@@ -98,6 +98,7 @@ Reference Projects/Repositories:
 * https://github.com/LogNet/grpc-spring-boot-starter
 * https://github.com/ExampleDriven/spring-boot-grpc-example
 
-== License
+License
+-------
 
-Apache 2.0
+'Apache 2.0'
