@@ -101,4 +101,4 @@ Reference Projects/Repositories:
 License
 -------
 
-'Apache 2.0'
+`Apache 2.0`
