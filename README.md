@@ -20,7 +20,12 @@ gRPC- Spring Boot - A Spring Boot implementation
 Version Details:
 ----------------
 
-Current Version: `0.0.1-SNAPSHOT`
+Current Version: `1.0.1-SNAPSHOT`
+	**What's new in version 1.0.1-SNAPSHOT?
+	
+
+Previous Version: `1.0.0.RELEASE`
+
 
 
 Reference Links:
