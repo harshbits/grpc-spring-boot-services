@@ -25,7 +25,6 @@
 
 	<modules>
 		<module>grpc-services-boot</module>
-		<module>grpc-services</module>
 	</modules>
 
 	<build>
