@@ -5,7 +5,7 @@
 
 	<groupId>com.grpc.service</groupId>
 	<artifactId>grpc-spring-boot-services</artifactId>
-	<version>1.0.0.RELEASE</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>grpc-spring-boot-services</name>
 	<description>gRPC services project</description>

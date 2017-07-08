@@ -11,7 +11,7 @@
 	<parent>
 		<groupId>com.grpc.service</groupId>
 		<artifactId>grpc-service-dependencies</artifactId>
-		<version>1.0.0.RELEASE</version>
+		<version>1.0.1-SNAPSHOT</version>
 		<relativePath>../grpc-service-dependencies</relativePath>
 	</parent>
 
@@ -19,7 +19,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<grpc.service.version>1.0.0.RELEASE</grpc.service.version>
+		<grpc.service.version>1.0.1-SNAPSHOT</grpc.service.version>
 	</properties>
 
 	<modules>
