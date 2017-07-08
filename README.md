@@ -21,7 +21,8 @@ Version Details:
 ----------------
 
 Current Version: `1.0.1-SNAPSHOT`
-	**What's new in version 1.0.1-SNAPSHOT?
+**New in version 1.0.1-SNAPSHOT: Support for Consul
+
 	
 
 Previous Version: `1.0.0.RELEASE`
