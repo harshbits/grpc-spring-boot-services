@@ -20,13 +20,11 @@ gRPC- Spring Boot - A Spring Boot implementation
 Version Details:
 ----------------
 
-Current Version: `1.0.1-SNAPSHOT`
+#### Current Version: `1.0.1-SNAPSHOT`
 
-#### New in version 1.0.1-SNAPSHOT: Support for Consul
+* What's new?: Support for [Consul](https://www.consul.io/)
 
-	
-
-Previous Version: `1.0.0.RELEASE`
+#### Previous Version: `1.0.0.RELEASE`
 
 
 
