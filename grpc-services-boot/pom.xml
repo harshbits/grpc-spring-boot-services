@@ -12,8 +12,8 @@
 	<parent>
 		<groupId>com.grpc.service</groupId>
 		<artifactId>grpc-spring-boot-services</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-		<!-- <relativePath>../grpc-spring-boot-services</relativePath> -->
+		<version>1.0.0.RELEASE</version>
+		<relativePath>../grpc-spring-boot-services</relativePath>
 	</parent>
 
 	<properties>
@@ -24,7 +24,7 @@
 
 	<modules>
 		<module>grpc-services-boot-parent</module>
-		<module>grpc-services-boot-autoconfigure</module>
+		<module>grpc-services-boot-starter</module>
 	</modules>
 
 	<build>

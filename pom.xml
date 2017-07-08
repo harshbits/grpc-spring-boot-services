@@ -5,7 +5,7 @@
 
 	<groupId>com.grpc.service</groupId>
 	<artifactId>grpc-spring-boot-services</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0.RELEASE</version>
 	<packaging>pom</packaging>
 	<name>grpc-spring-boot-services</name>
 	<description>gRPC services project</description>
@@ -16,7 +16,7 @@
 			<email>harshbhavsar2110@gmail.com</email>
 		</developer>
 	</developers>
-	
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -25,7 +25,7 @@
 
 	<modules>
 		<module>grpc-services-boot</module>
-<!-- 		<module>grpc-services</module> -->
+		<module>grpc-services</module>
 	</modules>
 
 	<build>

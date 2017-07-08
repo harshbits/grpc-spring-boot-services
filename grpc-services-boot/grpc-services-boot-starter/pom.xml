@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>grpc-services-boot-autoconfigure</artifactId>
+	<artifactId>grpc-services-boot-starter</artifactId>
 	<packaging>jar</packaging>
-	<name>grpc-services-boot-autoconfigure</name>
+	<name>grpc-services-boot-starter</name>
 	<description>gRPC boot starter project for auto configuration</description>
 
 	<developers>
@@ -18,7 +18,7 @@
 	<parent>
 		<groupId>com.grpc.service</groupId>
 		<artifactId>grpc-services-boot-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0.0.RELEASE</version>
 		<relativePath>../grpc-services-boot-parent</relativePath>
 	</parent>
 	<properties>
@@ -52,7 +52,6 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<!-- <version>${lombok.version}</version> -->
 		</dependency>
 
 		<dependency>

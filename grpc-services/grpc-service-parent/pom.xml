@@ -11,7 +11,7 @@
 	<parent>
 		<groupId>com.grpc.service</groupId>
 		<artifactId>grpc-service-dependencies</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0.0.RELEASE</version>
 		<relativePath>../grpc-service-dependencies</relativePath>
 	</parent>
 
@@ -19,11 +19,13 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<grpc.service.version>0.0.1-SNAPSHOT</grpc.service.version>
+		<grpc.service.version>1.0.0.RELEASE</grpc.service.version>
 	</properties>
 
 	<modules>
 		<module>grpc-service-demo-server</module>
+		<module>grpc-service-demo-client</module>
+		<module>grpc-service-eureka-server</module>
 	</modules>
 
 	<dependencies>
@@ -33,17 +35,8 @@
 			<groupId>com.grpc.service</groupId>
 			<artifactId>grpc-services-boot-starter</artifactId>
 			<version>${grpc.service.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>io.grpc</groupId>
-					<artifactId>grpc-netty</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>

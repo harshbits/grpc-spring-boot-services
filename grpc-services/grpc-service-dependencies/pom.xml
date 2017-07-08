@@ -5,7 +5,7 @@
 
 	<groupId>com.grpc.service</groupId>
 	<artifactId>grpc-service-dependencies</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0.RELEASE</version>
 	<packaging>pom</packaging>
 	<name>grpc-service-dependencies</name>
 	<description>gRPC services dependencies project</description>

@@ -20,7 +20,7 @@
 	<parent>
 		<groupId>com.grpc.service</groupId>
 		<artifactId>grpc-service-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0.0.RELEASE</version>
 		<relativePath />
 	</parent>
 
@@ -29,10 +29,8 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<os.detected.classifier>osx-x86_64</os.detected.classifier>
-		<grpc.boot.version>0.0.1-SNAPSHOT</grpc.boot.version>
-		<io.grpc.version.old>1.0.1</io.grpc.version.old>
-		<io.grpc.version.new>1.3.0</io.grpc.version.new>
-		<!-- <protobuf.java.version>3.2.0</protobuf.java.version> -->
+		<grpc.boot.version>1.0.0.RELEASE</grpc.boot.version>
+		<io.grpc.version>1.0.1</io.grpc.version>
 		<protobuf.java.version>3.0.2</protobuf.java.version>
 		<kr.motd.maven.version>1.5.0.Final</kr.motd.maven.version>
 	</properties>
@@ -61,28 +59,18 @@
 		<dependency>
 			<groupId>io.grpc</groupId>
 			<artifactId>grpc-stub</artifactId>
-			<!-- <version>${io.grpc.version}</version> -->
-			<!-- <version>[${io.grpc.version.old}, ${io.grpc.version.new}]</version> -->
-			<version>${io.grpc.version.old}</version>
+			<version>${io.grpc.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>io.grpc</groupId>
 			<artifactId>grpc-protobuf</artifactId>
-			<!-- <version>${io.grpc.version}</version> -->
-			<!-- <version>[${io.grpc.version.old}, ${io.grpc.version.new}]</version> -->
-			<version>${io.grpc.version.old}</version>
+			<version>${io.grpc.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>io.grpc</groupId>
 			<artifactId>grpc-netty</artifactId>
-			<!-- <version>${io.grpc.version}</version> -->
-			<!-- <version>[${io.grpc.version.old}, ${io.grpc.version.new}]</version> -->
-			<version>${io.grpc.version.old}</version>
+			<version>${io.grpc.version}</version>
 		</dependency>
-
-		<!-- <dependency> <groupId>io.grpc</groupId> <artifactId>grpc-all</artifactId> 
-			<version>${io.grpc.version}</version> <version>[${io.grpc.version.old}, ${io.grpc.version.new}]</version> 
-			</dependency> -->
 
 		<!-- Spring gRPC boot -->
 		<dependency>
@@ -144,7 +132,7 @@
 						version that grpc depends on. -->
 					<protocArtifact>com.google.protobuf:protoc:${protobuf.java.version}:exe:${os.detected.classifier}</protocArtifact>
 					<pluginId>grpc-java</pluginId>
-					<pluginArtifact>io.grpc:protoc-gen-grpc-java:${io.grpc.version.old}:exe:${os.detected.classifier}</pluginArtifact>
+					<pluginArtifact>io.grpc:protoc-gen-grpc-java:${io.grpc.version}:exe:${os.detected.classifier}</pluginArtifact>
 				</configuration>
 				<executions>
 					<execution>
