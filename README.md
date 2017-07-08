@@ -82,8 +82,14 @@ Note: specifying above property (i.e. port) is optional. Default port is `6565`
 * Once, Server project will get registered, start Demo Client project.
 
 #### Sample Request
-* localhost:19082/hello_grpc
+* http://localhost:19082/hello_grpc
 
+#### Sample Response
+```json
+{
+  "message": "Hello Harsh"
+}
+```
 
 Prerequisites
 -------------
