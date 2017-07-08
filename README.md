@@ -66,7 +66,7 @@ grpc:
   port: <port>
 ```
 
-Note: specifying above property (i.e. port) is optional. Default port is `7565`
+Note: specifying above property (i.e. port) is optional. Default port is `6565`
 
 #### Demo server project
 
