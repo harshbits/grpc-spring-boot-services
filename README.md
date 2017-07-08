@@ -25,7 +25,7 @@ Version Details:
 * What's new?: Support for [Consul](https://www.consul.io/)
 
 #### Previous Version: `1.0.0.RELEASE`
-
+* Code is in branch 1.0.0.RELEASE
 
 
 Reference Links:
