@@ -9,6 +9,12 @@ import org.springframework.context.annotation.Configuration;
 
 import com.grpc.service.support.GrpcService;
 
+/**
+ * Auto configuration class for gRPC services as part of grpc-boot
+ * 
+ * @author harshbhavsar
+ *
+ */
 @Configuration
 @EnableConfigurationProperties(GrpcServerProperties.class)
 @AutoConfigureOrder

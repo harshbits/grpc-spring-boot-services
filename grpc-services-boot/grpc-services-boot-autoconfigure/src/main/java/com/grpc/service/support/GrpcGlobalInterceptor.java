@@ -8,6 +8,12 @@ import java.lang.annotation.Target;
 
 import org.springframework.stereotype.Component;
 
+/**
+ * Marks a ServerInterceptor Component as global intercepter 
+ * 
+ * @author harshbhavsar
+ *
+ */
 @Target({ElementType.TYPE,ElementType.METHOD })
 @Retention(RetentionPolicy.RUNTIME)
 @Documented

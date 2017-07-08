@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,13 +14,19 @@ import com.google.protobuf.util.JsonFormat;
 import com.grpc.service.gen.GreeterOuterClass.HelloReply;
 import com.grpc.service.services.GreetingServiceGrpcClient;
 
+/**
+ * Hello Greeting gRPC controller
+ * 
+ * @author harshbhavsar
+ *
+ */
 @RestController
-public class BookGrpcController {
+public class HelloGrpcController {
 
 	@Autowired
 	GreetingServiceGrpcClient greetingServiceGrpcClient;
 
-	@RequestMapping(value = "/hello_grpc", produces = MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(value = "/hello_grpc", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<String> test(
 			@RequestParam(value = "compact", required = false, defaultValue = "false") boolean compact) {
 

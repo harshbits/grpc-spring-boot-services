@@ -10,6 +10,12 @@ import org.springframework.stereotype.Service;
 
 import io.grpc.ServerInterceptor;
 
+/**
+ * annotation class to register service as GrpcService
+ * 
+ * @author harshbhavsar
+ *
+ */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented

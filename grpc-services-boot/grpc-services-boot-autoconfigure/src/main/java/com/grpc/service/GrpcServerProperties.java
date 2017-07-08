@@ -2,6 +2,12 @@ package com.grpc.service;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
+/**
+ * Configuration property class for gRPC server
+ * 
+ * @author harshbhavsar
+ *
+ */
 @ConfigurationProperties("grpc")
 public class GrpcServerProperties {
     /**

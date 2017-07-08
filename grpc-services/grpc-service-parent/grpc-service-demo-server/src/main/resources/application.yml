@@ -8,18 +8,11 @@ spring:
     name: grpc-service-demo-server
 
 eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
-    metadataMap:
-      grpc.port: 7565
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-    healthcheck:
-      enabled: true
-    lease:
-        duration: 5
+    instance:
+        nonSecurePort: ${grpc.port}
+    client:
+        serviceUrl:
+            defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
 
 logging:
   level:

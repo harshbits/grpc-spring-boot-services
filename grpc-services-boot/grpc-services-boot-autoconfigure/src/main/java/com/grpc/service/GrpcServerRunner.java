@@ -77,6 +77,14 @@ public class GrpcServerRunner implements CommandLineRunner, DisposableBean {
 
 	}
 
+	/**
+	 * Method binds server service to gRPC services
+	 * 
+	 * @param serviceDefinition
+	 * @param gRpcService
+	 * @param globalInterceptors
+	 * @return
+	 */
 	private ServerServiceDefinition bindInterceptors(ServerServiceDefinition serviceDefinition, GrpcService gRpcService,
 			Collection<ServerInterceptor> globalInterceptors) {
 
@@ -97,6 +105,9 @@ public class GrpcServerRunner implements CommandLineRunner, DisposableBean {
 		return ServerInterceptors.intercept(serviceDefinition, interceptors);
 	}
 
+	/**
+	 * 
+	 */
 	private void startDaemonAwaitThread() {
 		Thread awaitThread = new Thread() {
 			@Override
