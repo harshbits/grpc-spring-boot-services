@@ -53,8 +53,12 @@ public class GreetingServiceGrpcClient {
 		return response;
 	}
 
+	/**
+	 * An Initialize Client method to invoke connection between client and server
+	 * 
+	 */
 	@PostConstruct
-	private void initializeClient() {
+	public void initializeClient() {
 
 		final InstanceInfo instanceInfo = client.getNextServerFromEureka(targetServer, false);
 		final ManagedChannel channel = ManagedChannelBuilder

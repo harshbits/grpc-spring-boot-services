@@ -10,6 +10,12 @@ import io.grpc.ServerBuilder;
  */
 public class GrpcServerBuilderConfigurer {
 	
+	/**
+	 * Grpc Server builder configuration method
+	 * 
+	 * @param serverBuilder
+	 */
 	public void configure(ServerBuilder<?> serverBuilder) {
+		//Intentionally blank
 	}
 }

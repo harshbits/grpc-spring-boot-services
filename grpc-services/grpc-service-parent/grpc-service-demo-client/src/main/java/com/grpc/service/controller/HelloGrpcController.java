@@ -24,7 +24,7 @@ import com.grpc.service.services.GreetingServiceGrpcClient;
 public class HelloGrpcController {
 
 	@Autowired
-	GreetingServiceGrpcClient greetingServiceGrpcClient;
+	private GreetingServiceGrpcClient greetingServiceGrpcClient;
 
 	@RequestMapping(value = "/hello_grpc", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<String> test(
@@ -33,7 +33,6 @@ public class HelloGrpcController {
 		HelloReply response = greetingServiceGrpcClient.sayHello();
 
 		if (compact) {
-
 			return new ResponseEntity<>("SUCCESS", HttpStatus.OK);
 		} else {
 
