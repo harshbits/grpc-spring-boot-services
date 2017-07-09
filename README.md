@@ -22,7 +22,9 @@ Version Details:
 
 #### Current Version: `1.0.1-SNAPSHOT`
 
-* What's new?: Support for [Consul](https://www.consul.io/)
+* What's new?
+  * Support for [Consul](https://www.consul.io/)
+  *  io.grpc (grpc-java) version: `1.4.0`
 
 #### Previous Version: `1.0.0.RELEASE`
 * Code is in branch 1.0.0.RELEASE
