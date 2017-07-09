@@ -44,18 +44,8 @@ Clone [the repository](https://github.com/harshbits/grpc-spring-boot-services.gi
 <!-- Spring gRPC boot -->
 <dependency>
   <groupId>com.grpc.service</groupId>
-  <artifactId>grpc-services-boot-autoconfigure</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <exclusions>
-     <exclusion>
-        <groupId>io.grpc</groupId>
-	<artifactId>grpc-netty</artifactId>
-     </exclusion>
-     <exclusion>
-        <groupId>org.springframework.boot</groupId>
-	<artifactId>spring-boot-starter</artifactId>
-     </exclusion>
-  </exclusions>
+  <artifactId>grpc-services-boot-starter</artifactId>
+  <version>1.0.0.RELEASE</version>
 </dependency>
 
 ```
