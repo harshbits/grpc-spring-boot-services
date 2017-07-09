@@ -14,9 +14,7 @@ gRPC- Spring Boot - A Spring Boot implementation
 </table>
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fecf258dd5c54b2082400efdf8165fe7)](https://www.codacy.com/app/hbhavsar2110/grpc-spring-boot-services?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=harshbits/grpc-spring-boot-services&amp;utm_campaign=Badge_Grade)
-
 [![Build Status](https://travis-ci.org/harshbits/grpc-spring-boot-services.svg?branch=master)](https://travis-ci.org/harshbits/grpc-spring-boot-services)
-
 [![Join the chat at https://gitter.im/grpc/grpc](https://badges.gitter.im/grpc/grpc.svg)](https://gitter.im/grpc/grpc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Version Details:
