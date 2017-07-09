@@ -22,7 +22,9 @@ Version Details:
 
 #### Current Version: `1.0.1-SNAPSHOT`
 
-* What's new?: Support for [Consul](https://www.consul.io/)
+* What's new?
+  * Support for [Consul](https://www.consul.io/)
+  *  io.grpc (grpc-java) version: `1.4.0`
 
 #### Previous Version: `1.0.0.RELEASE`
 * Code is in branch 1.0.0.RELEASE
@@ -49,18 +51,8 @@ Clone [the repository](https://github.com/harshbits/grpc-spring-boot-services.gi
 <!-- Spring gRPC boot -->
 <dependency>
   <groupId>com.grpc.service</groupId>
-  <artifactId>grpc-services-boot-autoconfigure</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <exclusions>
-     <exclusion>
-        <groupId>io.grpc</groupId>
-	<artifactId>grpc-netty</artifactId>
-     </exclusion>
-     <exclusion>
-        <groupId>org.springframework.boot</groupId>
-	<artifactId>spring-boot-starter</artifactId>
-     </exclusion>
-  </exclusions>
+  <artifactId>grpc-services-boot-starter</artifactId>
+  <version>1.0.1-SNAPSHOT</version>
 </dependency>
 
 ```
@@ -81,11 +73,25 @@ Note: specifying above property (i.e. port) is optional. Default port is `6565`
 
 * [grpc-service-demo-client](https://github.com/harshbits/grpc-spring-boot-services/tree/master/grpc-services/grpc-service-parent/grpc-service-demo-client)
 
-
-
 #### How to Build
-Refer this github [grpc-java](https://github.com/grpc/grpc-java#download) page
+* Refer this github [grpc-java](https://github.com/grpc/grpc-java#download) page
+* Right click on project and run maven update command from IDE (STS/Eclipse). It will generate protobuf resources.
 
+#### How to Run
+* Import demo Server, Client and Eureka projects.
+* Run Eureka Server.
+* Run Demo Server project and wait for Eureka to register it.
+* Once, Server project will get registered, start Demo Client project.
+
+#### Sample Request
+* http://localhost:19082/hello_grpc
+
+#### Sample Response
+```json
+{
+  "message": "Hello Harsh"
+}
+```
 
 Prerequisites
 -------------
