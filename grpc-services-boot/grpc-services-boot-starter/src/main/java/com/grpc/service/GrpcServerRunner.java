@@ -27,6 +27,13 @@ import io.grpc.ServerInterceptors;
 import io.grpc.ServerServiceDefinition;
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * gRPC Server Runner class 
+ * 
+ * @author harshbhavsar
+ * @since 1.0.0
+ *
+ */
 @Slf4j
 public class GrpcServerRunner implements CommandLineRunner, DisposableBean {
 

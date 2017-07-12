@@ -11,9 +11,13 @@ import org.springframework.stereotype.Service;
 import io.grpc.ServerInterceptor;
 
 /**
- * annotation class to register service as GrpcService
+ * Indicates that an annotated class is a "gRPC Service".
+ *  
+ * <p>This annotation serves as a specialization of {@link Service @Service},
+ * allowing for implementation classes to be autodetected through classpath scanning.
  * 
  * @author harshbhavsar
+ * @since 1.0.0
  *
  */
 @Target(ElementType.TYPE)
@@ -25,4 +29,11 @@ public @interface GrpcService {
 	Class<? extends ServerInterceptor>[] interceptors() default {};
 
 	boolean applyGlobalInterceptors() default true;
+	
+	/**
+	 * The value may indicate a suggestion for a logical component name,
+	 * to be turned into a Spring bean in case of an autodetected component.
+	 * @return the suggested component name, if any
+	 */
+	String value() default "";
 }

@@ -13,6 +13,7 @@ import com.grpc.service.support.GrpcService;
  * Auto configuration class for gRPC services as part of grpc-boot
  * 
  * @author harshbhavsar
+ * @since 1.0.0
  *
  */
 @Configuration
