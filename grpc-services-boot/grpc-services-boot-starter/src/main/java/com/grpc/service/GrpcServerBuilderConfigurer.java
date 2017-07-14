@@ -14,7 +14,7 @@ public class GrpcServerBuilderConfigurer {
 	/**
 	 * Grpc Server builder configuration method
 	 * 
-	 * @param serverBuilder
+	 * @param {@link ServerBuilder}
 	 */
 	public void configure(ServerBuilder<?> serverBuilder) {
 		//Intentionally blank

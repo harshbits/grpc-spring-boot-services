@@ -28,7 +28,7 @@ import io.grpc.ServerServiceDefinition;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * gRPC Server Runner class 
+ * This is a gRPC Server Runner class 
  * 
  * @author harshbhavsar
  * @since 1.0.0
