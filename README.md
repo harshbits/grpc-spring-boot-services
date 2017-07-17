@@ -9,7 +9,7 @@ gRPC- Spring Boot - A Spring Boot implementation
   </tr>
   <tr>
     <td><b>Spring Boot Homepage:</b></td>
-    <td><a href="https://projects.spring.io/spring-boot/">spring.io/</a></td>
+    <td><a href="https://projects.spring.io/spring-boot/">spring.io</a></td>
   </tr>
 </table>
 
