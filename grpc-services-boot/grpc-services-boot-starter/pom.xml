@@ -16,7 +16,7 @@
 	</developers>
 
 	<parent>
-		<groupId>com.grpc.service</groupId>
+		<groupId>com.harshbits</groupId>
 		<artifactId>grpc-services-boot-parent</artifactId>
 		<version>1.0.1-SNAPSHOT</version>
 		<relativePath>../grpc-services-boot-parent</relativePath>

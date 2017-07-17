@@ -26,12 +26,14 @@ import com.grpc.service.support.GrpcService;
 
 /**
  * {@link EnableAutoConfiguration Auto-configuration} for io.grpc's gRPC support.
- * 
+ * <p>
+ * This configuration class is active only when the grpc-services-boot-starter for Spring
+ * library is on the classpath.
+ * <p>
  * Auto configuration class for gRPC services as part of grpc-services-boot-starter
  * 
  * @author harshbhavsar
  * @since 1.0.0
- *
  */
 @Configuration
 @EnableConfigurationProperties(GrpcServerProperties.class)

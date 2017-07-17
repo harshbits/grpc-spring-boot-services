@@ -10,7 +10,7 @@
 	<description>gRPC boot project for auto cofiguration</description>
 
 	<parent>
-		<groupId>com.grpc.service</groupId>
+		<groupId>com.harshbits</groupId>
 		<artifactId>grpc-spring-boot-services</artifactId>
 		<version>1.0.1-SNAPSHOT</version>
 	</parent>

@@ -18,7 +18,7 @@
 	</developers>
 
 	<parent>
-		<groupId>com.grpc.service</groupId>
+		<groupId>com.harshbits</groupId>
 		<artifactId>grpc-service-parent</artifactId>
 		<version>1.0.1-SNAPSHOT</version>
 	</parent>

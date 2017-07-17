@@ -9,7 +9,7 @@
 	<description>gRPC services parent project</description>
 
 	<parent>
-		<groupId>com.grpc.service</groupId>
+		<groupId>com.harshbits</groupId>
 		<artifactId>grpc-service-dependencies</artifactId>
 		<version>1.0.1-SNAPSHOT</version>
 		<relativePath>../grpc-service-dependencies</relativePath>
@@ -32,7 +32,7 @@
 
 		<!-- Spring gRPC boot -->
 		<dependency>
-			<groupId>com.grpc.service</groupId>
+			<groupId>com.harshbits</groupId>
 			<artifactId>grpc-services-boot-starter</artifactId>
 			<version>${grpc.service.version}</version>
 		</dependency>
