@@ -29,6 +29,9 @@ Version Details:
 #### Previous Version: `1.0.0.RELEASE`
 * Code is in branch 1.0.0.RELEASE
 
+#### Future Planning: `2.0.1-SNAPSHOT`
+* [Java 9] Compatibility/Support
+
 
 Reference Links:
 ----------------
