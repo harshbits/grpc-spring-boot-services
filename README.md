@@ -102,7 +102,13 @@ Prerequisites
 In order to start work with project, make sure you have configured IDE/System with prerequisites steps.
 
 #### Java Version
-* Java SE Development Kit 8 (JDK 8) 
+* Java 9 (JDK 9) for version `2.0.0-SNAPSHOT`
+* Java SE Development Kit 8 (JDK 8) for version `1.0.0.RELEASE`
+
+#### Spring Boot Version
+* Spring Boot Version Must be greater than `2`
+* Currently Used version: `2.0.0.BUILD-SNAPSHOT`
+* Refer Spring Boot version `2.0.0.BUILD-SNAPSHOT` [Documentation](https://docs.spring.io/spring-boot/docs/2.0.0.BUILD-SNAPSHOT/reference/htmlsingle/)
 
 #### Lombok
 * Install Lombok for your IDE (i.e. STS or Eclipse)
