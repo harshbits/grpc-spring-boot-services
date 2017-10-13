@@ -20,17 +20,18 @@ gRPC- Spring Boot - A Spring Boot implementation
 Version Details:
 ----------------
 
-#### Current Version: `1.0.1-SNAPSHOT`
+#### Current Version: `2.0.0-SNAPSHOT`
 
 * What's new?
   * Support for [Consul](https://www.consul.io/)
-  *  io.grpc (grpc-java) version: `1.4.0`
+  * Java 9 Support
+  * io.grpc (grpc-java) version: `1.7.0`
 
 #### Previous Version: `1.0.0.RELEASE`
 * Code is in branch 1.0.0.RELEASE
 
 #### Future Planning: `2.0.1-SNAPSHOT`
-* [Java 9](http://openjdk.java.net/projects/jdk9/) Compatibility/Support
+* [Java 9](http://openjdk.java.net/projects/jdk9/) Module Structure 
 
 
 Reference Links:
@@ -55,7 +56,7 @@ Clone [the repository](https://github.com/harshbits/grpc-spring-boot-services.gi
 <dependency>
   <groupId>com.grpc.service</groupId>
   <artifactId>grpc-services-boot-starter</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>2.0.0-SNAPSHOT</version>
 </dependency>
 
 ```
