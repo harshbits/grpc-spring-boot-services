@@ -73,7 +73,7 @@
 
 		<!-- Spring gRPC boot -->
 		<dependency>
-			<groupId>com.grpc.service</groupId>
+			<groupId>com.harshbits</groupId>
 			<artifactId>grpc-services-boot-starter</artifactId>
 			<version>${grpc.boot.version}</version>
 		</dependency>

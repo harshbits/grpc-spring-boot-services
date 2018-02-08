@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option java_package = "com.grpc.service.gen";
+option java_package = "com.harshbits.gen";
 
 
 
